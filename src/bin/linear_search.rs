@@ -1,3 +1,5 @@
+/// Linear search searching each element in the array one by one
+/// Time complexity O(N)
 fn linear_search(haystack: [i16; 9], needle: i16) -> bool {
     for i in haystack {
         if needle == i {
@@ -12,6 +14,7 @@ fn main() {
     let haystack: [i16; 9] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let needle: i16 = 5;
     let result = linear_search(haystack, needle);
+
     println!("Is {} in the haystack? {}", needle, result);
 }
 

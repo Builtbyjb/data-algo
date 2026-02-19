@@ -1,3 +1,4 @@
+/// Time complexity O(sqrt(N))
 fn two_crystal_balls(breaks: Vec<bool>) -> isize {
     let jmp_amount = breaks.len().isqrt() as isize;
     let len = breaks.len() as isize;
@@ -17,6 +18,7 @@ fn two_crystal_balls(breaks: Vec<bool>) -> isize {
 
     let mut j = 0;
 
+    // Second crystal ball
     while j < jmp_amount && i < len - 1 {
         j += 1;
         i += 1;

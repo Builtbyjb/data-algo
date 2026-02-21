@@ -4,6 +4,7 @@ import "testing"
 
 func TestBreakFound(t *testing.T) {
 	breaks := []bool{false, false, false, false, false, false, true, true, true}
+
 	if twoCrystalBalls(breaks) != 6 {
 		t.Errorf("Expected 6")
 	}

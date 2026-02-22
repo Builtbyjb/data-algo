@@ -42,7 +42,7 @@ func (q *queue[T]) deque() T {
 	head := q.head
 	q.head = q.head.next
 
-	// Clear reference
+	// Optional Clean up
 	head.next = nil
 
 	q.Length--

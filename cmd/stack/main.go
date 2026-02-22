@@ -36,7 +36,7 @@ func (s *stack[T]) pop() T {
 	head := s.head
 	s.head = head.prev
 
-	// Clean up reference
+	// Optional Clean up
 	head.prev = nil
 
 	s.Length--
